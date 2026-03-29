@@ -17,8 +17,7 @@ def enroll_student():
     elif course_code in student_history:
         print("Error: You have already completed this course.")
     else:
-        # Unit 3 & 5: Checking Prerequisites and Credit Limits
-        required_pre = course_catalog[course_code]["req"]
+       required_pre = course_catalog[course_code]["req"]
         course_credits = course_catalog[course_code]["credits"]
         
         if required_pre != "Nil" and required_pre not in student_history:

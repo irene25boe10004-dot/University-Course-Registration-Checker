@@ -1,6 +1,5 @@
 # Project: Academic Enrollment System (Unit 5: Dictionaries & Lists) 
 def enroll_student():
-    # Unit 5: Representing compound data [cite: 17]
     course_catalog = {
         "CSE1021": {"name": "Intro to Problem Solving", "credits": 4, "req": "Nil"},
         "MAT1011": {"name": "Calculus", "credits": 4, "req": "High School Math"},
@@ -8,13 +7,11 @@ def enroll_student():
     
         "ENG1001": {"name": "Effective Technical Communication", "credits": 2, "req": "Nil"}}
     
-    # Unit 5: Student record 
     student_history = ["High School Math"] 
     current_credits = 18 # Max limit is 21
     
     course_code = input("Enter Course Code to Register: ").upper()
     
-    # Unit 3: Conditional validation 
     if course_code not in course_catalog:
         print("Error: Course code does not exist in the syllabus.")
     elif course_code in student_history:
